@@ -80,4 +80,12 @@ print(another_list[2:])
 print(another_list[:2])
 print(another_list[1:5])
 
+# SWAPPING VALUE
 
+name[0], name[1] = name[1], name[0]
+print(name)
+
+friends = ['ashley', 'matt', 'michael']
+print([friend.capitalize() for friend in friends])
+# OR
+print([friend[0].upper() + friend[1:] for friend in friends])
