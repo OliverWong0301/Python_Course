@@ -35,3 +35,5 @@ hotel_location = {
 print(hotel_location[(68, 98.999)])
 
 ### ALL items() returns tuple
+
+
