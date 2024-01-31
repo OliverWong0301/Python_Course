@@ -56,3 +56,23 @@ def exponent(num1, num2=2):
 print(exponent(3)) 
 
 # a default parameter can be a function
+
+# An example of using the global scope by method global standing right before the variable name happens inside the function
+total = 0
+def sum_it_up():
+    global total
+    total += 1
+    return total
+
+print(sum_it_up())
+
+# An example of using local scope from a parents function by a child function (nested) || using nonlocal method
+def outer():
+    count = 10
+    def inner():
+        nonlocal count
+        count += 1
+        return count
+    return inner()
+
+print(outer())
