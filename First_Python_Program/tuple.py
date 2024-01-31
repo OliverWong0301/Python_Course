@@ -18,10 +18,14 @@ print(numbers)
 
 # Example: on unchanging data
 months = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
-for i in months:
-    print(f'This month is: {i}')
+# Loops through tuple:
+for month in months:
+    print(f'This month is: {month}')
 
-
+i = len(months) - 1
+while i >= 0:
+    print(months[i])
+    i -= 1
 print('*** *** ***')
 # Tuple also can be used as keys in dictionaries but list can not
 hotel_location = {
